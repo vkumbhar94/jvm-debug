@@ -5,8 +5,8 @@ metadata:
 spec:
   containers:
   - name: jvm-debug
-    image: jvm-debug:latest
-    imagePullPolicy: IfNotPresent
+    image: vkumbhar94/jvm-debug:latest
+    imagePullPolicy: Always
     resources:
       limits:
         memory: 1Gi
@@ -14,4 +14,4 @@ spec:
         memory: 1Gi
     env:
     - name: MAX
-      value: "100000"
+      value: "25000"
