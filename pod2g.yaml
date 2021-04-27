@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: static-jvm-debug
+  name: static-jvm-debug-2g
 spec:
   containers:
   - name: jvm-debug
