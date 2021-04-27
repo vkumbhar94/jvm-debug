@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: static-jvm-debug
+spec:
+  containers:
+  - name: jvm-debug
+    image: vkumbhar94/jvm-debug:latest
+    imagePullPolicy: Always
+    resources:
+      limits:
+        memory: 2Gi
+      requests:
+        memory: 2Gi
+    env:
+    - name: MAX
+      value: "25000"
